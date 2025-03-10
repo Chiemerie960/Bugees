@@ -1,65 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* .almightyContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
- nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- }
-.topHeader{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-    padding: .3rem 10rem;
-    background-color: rgba(0, 0, 0, 0.801);
-    color: white;
-    font-size: .8rem;
-    letter-spacing: 1px;
-}
-.right{
-    display: flex;
-    gap: .6rem;
-}
-.left{
-    display: flex;
-    gap: 2.6rem;
-}
-.leftSide{
-    display: flex;
-    gap: .6rem;
-}
-.mainHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem 10rem;
-    background: #d6d6d6;
-}
-.mainHeader .logo img{
-    width: 15rem;
-}
-.navMenu{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    font-size: 1.2rem;
-    gap: 4rem;
 
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.navMenu a{
-    text-decoration: none;
-    color: black;
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.3rem 10rem;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.right {
+  display: flex;
+  gap:.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.leftSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 10rem;
+  background: #d6d6d6;
+}
+.mainHeader .logo img {
+  width: 10rem;
+}
+.navMenu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  gap: 4rem;
+}
+.navMenu a {
+  text-decoration: none;
+  color: black;
 }
