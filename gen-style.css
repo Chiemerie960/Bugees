@@ -1,0 +1,17 @@
+.head-text {
+  color: #4b47e6;
+}
+.primary-btn {
+  color: white;
+  background-color: #4b47e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #4c47e6b9;
+}
+
