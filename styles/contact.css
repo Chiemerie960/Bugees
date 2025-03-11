@@ -1,0 +1,67 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Container for the contact page */
+.contactPage {
+  width: 100%;
+  height: auto;
+}
+
+/* Container for the top section */
+.contactPage .contactTop {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+}
+.contactPage .contactTop .contactImg {
+  width: 100%;
+  height: 100%;
+}
+.contactPage .contactTop .contactImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contactPage .contactTop .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.contactPage .contactTop .contactinfo {
+  position: absolute;
+  color: white;
+  z-index: 3;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contactPage .contactBottom {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+.contactPage .contactBottom .contactBottomLeft {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1, 5rem;
+}
