@@ -31,11 +31,6 @@
   height:3rem;
   background:var(--primary);
 }
-.lightgrey{
-  width:15rem;
-  height:3rem;
-  background:var(--primary);
-}
 .darkgrey{
   width:15rem;
   height:3rem;
@@ -88,5 +83,4 @@
 
 a{
   text-decoration: none;
-
 }

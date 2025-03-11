@@ -25,7 +25,7 @@ nav {
 }
 .right {
   display: flex;
-  gap:.5rem;
+  gap: 0.5rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -64,34 +64,34 @@ nav {
   text-decoration: none;
   color: black;
 }
-nav{
+nav {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.topHeader{
+.topHeader {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: .2rem 10rem;
-  background-color: blueviolet;
+  padding: 0.2rem 10rem;
+  background-color: var(--secondary);
 }
-.right{
+.right {
   display: flex;
-  gap: .6rem;
+  gap: 0.6rem;
 }
-.left{
+.left {
   display: flex;
   gap: 2.6rem;
 }
-.leftSide{
+.leftSide {
   display: flex;
-  gap: .6rem;
+  gap: 0.6rem;
 }
-.mainHeader{
+.mainHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,19 +100,42 @@ nav{
   padding: 1rem 10rem;
   background: #d6d6d6;
 }
-.mainHeader .logo img{
+.mainHeader .logo img {
   width: 15rem;
   height: 3rem;
 }
-.navMenu{
+.navMenu {
   list-style: none;
   display: flex;
   flex-direction: row;
   font-size: 1.2rem;
   gap: 4rem;
-
 }
-.navMenu a{
+.navMenu a {
   text-decoration: none;
   color: black;
+}
+.hero {
+  background: url("../assets/testbg.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h2 {
+  /* font-size: 36px; */
+  margin-bottom: 20px;
+  color: white;
+}
+.hero p {
+  /* font-size: 18px; */
+  margin-bottom: 30px;
+  color: var(--yellow);
 }
