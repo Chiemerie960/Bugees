@@ -100,6 +100,7 @@ nav {
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  height: 5rem;
   padding: 1rem 10rem;
   background: #d6d6d6;
 }
@@ -118,6 +119,86 @@ nav {
   text-decoration: none;
   color: black;
 }
+.mainHeader .burger {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .topHeader {
+    padding: 0.5rem 1rem;
+  }
+  .mainHeader {
+    padding: 1rem;
+  }
+  .navMenu {
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .topHeader {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .mainHeader {
+    padding: 1rem 2rem;
+  }
+  .mainHeader .burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .mainHeader .burger i {
+    font-size: 2rem;
+    color: var(--yellow);
+    transition: var(--transition);
+  }
+  .burger i.bi-list {
+    transform: rotate(0deg);
+  }
+
+  .burger i.bi-x {
+    transform: rotate(90deg);
+  }
+  .mainHeader .burger i:hover {
+    color: var(--secondary);
+  }
+  .navMenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 5rem);
+    align-items: center;
+    padding-top: 5rem;
+    background-color: var(--secondary);
+    top: 5rem;
+    left: 0;
+    width: 0%;
+    transform: translateX(-100%);
+    gap: 1.5rem;
+    opacity: 0;
+  }
+  .open {
+    width: 70%;
+    transform: translateX(0);
+    opacity: 1;
+    transition: var(--transition);
+  }
+  .navMenu li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    transition: var(--transition);
+  }
+  .navMenu li a {
+    color: white;
+    width: 100%;
+  }
+  .navMenu li:hover {
+    color: white;
+    background-color: var(--yellow);
+  }
+}
 .hero {
   background: url("../assets/testbg.jpg"),
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
@@ -132,11 +213,14 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.hero h2 {
-  margin-bottom: 20px;
-  color: white;
+.hero-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.hero p {
-  margin-bottom: 30px;
-  color: var(--yellow);
+.hero h2 {
+  color: white;
+  font-size: 4rem;
+  max-width: 60%;
 }
