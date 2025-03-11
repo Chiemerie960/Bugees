@@ -122,6 +122,17 @@ nav {
 .mainHeader .burger {
   display: none;
 }
+@media screen and (max-width: 1200px) {
+  .topHeader {
+    padding: 0.5rem 2rem;
+  }
+  .mainHeader {
+    padding: 1rem 2rem;
+  }
+  .navMenu {
+    gap: 1.5rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .topHeader {
     padding: 0.5rem 1rem;
@@ -218,9 +229,13 @@ nav {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 .hero h2 {
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   max-width: 60%;
+}
+.hero button {
+  font-size: 1rem;
 }
