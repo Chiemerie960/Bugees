@@ -4,83 +4,102 @@
   font-family: "Poppins";
 }
 
-:root{
-  --light-primary:#575757;
-  --primary:#2F2F2F;
-  --secondary:#222222;
-  --yellow:#ECC53F;
-  --transition:400ms all ease;
+:root {
+  --light-primary: #575757;
+  --primary: #2f2f2f;
+  --secondary: #222222;
+  --yellow: #ecc53f;
+  --light-yellow: #f0ce5e;
+  --transition: 400ms all ease;
 }
 
-.heading{
+.heading {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color:var(--secondary);
-  font-size: 1.5rem
+  color: var(--secondary);
+  font-size: 1.5rem;
 }
-.sub-heading{
+.sub-heading {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color:var(--secondary);
-  font-size: 1.2rem
+  color: var(--secondary);
+  font-size: 1.2rem;
 }
-.lightgrey{
-  width:15rem;
-  height:3rem;
-  background:var(--primary);
+.lightgrey {
+  width: 15rem;
+  height: 3rem;
+  background: var(--primary);
 }
-.darkgrey{
-  width:15rem;
-  height:3rem;
-  background:var(--secondary);
+.darkgrey {
+  width: 15rem;
+  height: 3rem;
+  background: var(--secondary);
 }
-.yellow{
-  width:15rem;
-  height:3rem;
-  background:var(--yellow);
+.yellow {
+  width: 15rem;
+  height: 3rem;
+  background: var(--yellow);
 }
 
-.btn-primary{
+.btn-primary {
   background-color: var(--primary);
-  color:white;
-  border-radius: .5rem;
-  padding:.5rem 2rem;
-  border:none;
-  transition:var(--transition);
-  cursor:pointer;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
 }
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: var(--light-primary);
-  color:white;
-  border-radius: .5rem;
-  padding:.5rem 2rem;
-  border:none;
-  transition:var(--transition);
-  cursor:pointer;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
-.btn-danger{
+.btn-danger {
   background-color: rgb(253, 26, 26);
-  color:white;
-  border-radius: .5rem;
-  padding:.5rem 2rem;
-  border:none;
-  transition:var(--transition);
-  cursor:pointer;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
-.btn-danger:hover{
+.btn-danger:hover {
   background-color: rgb(250, 64, 64);
-  color:white;
-  border-radius: .5rem;
-  padding:.5rem 2rem;
-  border:none;
-  transition:var(--transition);
-  cursor:pointer;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.btn-yellow {
+  background-color: var(--yellow);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.btn-yellow:hover {
+  background-color: var(--light-yellow);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
 }

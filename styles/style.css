@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+header {
+  height: 100vh;
+}
 nav {
   width: 100%;
   display: flex;
@@ -124,18 +127,16 @@ nav {
   padding: 100px 0;
   text-align: center;
   color: white;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .hero h2 {
-  /* font-size: 36px; */
   margin-bottom: 20px;
   color: white;
 }
 .hero p {
-  /* font-size: 18px; */
   margin-bottom: 30px;
   color: var(--yellow);
 }
