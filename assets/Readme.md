@@ -1,2 +1,6 @@
-color: #4b47e6;
-color: #d6d6d6;
+<!-- Media Queries -->
+@media screen and (max-width: 1200px)
+@media screen and (max-width: 1024px)
+@media screen and (max-width: 900px)
+@media screen and (max-width: 720px)
+@media screen and (max-width: 600px)
