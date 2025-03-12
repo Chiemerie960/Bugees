@@ -111,3 +111,73 @@
   letter-spacing: 1.5px;
   border-radius: 0.5rem;
 }
+
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width: 1200px) {
+  .contactPage .contactBottom {
+    gap: 2rem;
+  }
+  .contactPage .contactBottom .contactBottomRight {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contactPage .contactTop .contactinfo {
+    font-size: 1.8rem;
+    left: 25%;
+  }
+  .contactPage .contactBottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactPage .contactBottom .contactBottomRight {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contactPage .contactTop {
+    height: 35vh;
+  }
+  .contactPage .contactBottom .contactBottomRight {
+    width: 80%;
+  }
+  .contactPage .contactBottom .address,
+  .contactPage .contactBottom .phone,
+  .contactPage .contactBottom .email,
+  .contactPage .contactBottom .chamber {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contactPage .contactTop .contactinfo {
+    font-size: 1.5rem;
+    left: 30%;
+  }
+  .contactPage .contactBottom .contactBottomRight {
+    width: 90%;
+  }
+  .contactPage .contactBottom .contactBottomRight form input,
+  .contactPage .contactBottom .contactBottomRight form textarea,
+  .contactPage .contactBottom .contactBottomRight form button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactPage .contactTop {
+    height: 30vh;
+  }
+  .contactPage .contactTop .contactinfo {
+    font-size: 1.2rem;
+    left: 35%;
+  }
+  .contactPage .contactBottom {
+    padding: 1rem;
+  }
+  .contactPage .contactBottom .contactBottomRight {
+    width: 100%;
+  }
+}
