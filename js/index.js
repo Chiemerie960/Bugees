@@ -14,3 +14,6 @@ burger.addEventListener("click", () => {
     document.body.style.overflow = "auto";
   }
 });
+
+
+AOS.init();
