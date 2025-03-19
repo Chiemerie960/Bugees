@@ -413,7 +413,7 @@ nav {
 }
 @media screen and (max-width: 1024px) {
   .footer {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     gap: 2rem;
   }
   .footerMenu {
@@ -429,6 +429,7 @@ nav {
 }
 @media screen and (max-width: 600px) {
   .footer {
+    padding-bottom: 0.6rem;
     gap: 0.6rem;
   }
 }
