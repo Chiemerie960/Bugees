@@ -427,3 +427,8 @@ nav {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .footer {
+    gap: 0.6rem;
+  }
+}
