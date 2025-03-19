@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
+  /* overflow-x: hidden; */
 }
 
 :root {
@@ -205,7 +206,7 @@ nav {
 }
 .mainHeader .logo img {
   width: 15rem;
-  height: 3rem;
+  /* height: 3rem; */
 }
 .navMenu {
   list-style: none;
@@ -247,10 +248,19 @@ nav {
   .topHeader {
     display: none;
   }
+  .mainHeader .logo {
+    width: 7rem;
+  }
+  .mainHeader .logo img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 720px) {
   .mainHeader {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+  }
+  .mainHeader .logo img {
+    width: 30vw;
   }
   .mainHeader .burger {
     display: flex;
@@ -258,6 +268,7 @@ nav {
     justify-content: center;
     cursor: pointer;
   }
+
   .mainHeader .burger i {
     font-size: 2rem;
     color: var(--yellow);
@@ -287,6 +298,7 @@ nav {
     transform: translateX(-100%);
     gap: 1.5rem;
     opacity: 0;
+    z-index: 1000;
   }
   .open {
     width: 70%;
@@ -309,7 +321,14 @@ nav {
     background-color: var(--yellow);
   }
 }
-
+@media screen and (max-width: 600px) {
+  .mainHeader {
+    padding: 1rem 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
 /********************** Footer **********************/
 .footer {
   width: 100%;
@@ -319,6 +338,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   padding: 3rem 10rem;
+  padding-bottom: 1rem;
   background: var(--primary);
   color: white;
   gap: 1rem;
@@ -343,15 +363,19 @@ nav {
 .footer1 img {
   width: 15rem;
 }
+.footer2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .footerLinks {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
-  font-size: 1.2rem;
+  font-size: 1rem;
   gap: 1rem;
-
 }
 .footerLinks a {
   color: white;
@@ -386,7 +410,6 @@ nav {
   .footer {
     padding: 3rem 2rem;
   }
-  
 }
 @media screen and (max-width: 1024px) {
   .footer {
@@ -403,5 +426,4 @@ nav {
   .footer3 {
     width: 100%;
   }
-  
 }

@@ -1,10 +1,8 @@
-/* Container for the contact page */
+
 .contactPage {
   width: 100%;
-  height: auto;
 }
 
-/* Container for the top section */
 .contactPage .contactTop {
   position: relative;
   height: 40vh;
@@ -30,84 +28,89 @@
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
-}
-
-.contactPage .contactTop .contactinfo {
-  position: absolute;
+  display: flex;
+  align-items: center;
   color: white;
-  z-index: 3;
-  left: 20%;
-  top: 50%;
-  transform: translate(-20%, -50%);
   font-size: 2rem;
   font-weight: 600;
+  padding: 0 10rem;
 }
+
 .contactPage .contactBottom {
+  padding: 5rem 10rem;
   width: 100%;
-  padding: 2rem 1rem;
+  box-sizing: border-box;
   display: flex;
-  align-items: start;
-  margin-top: 0.9rem;
-  flex-direction: row;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-between;
 }
 .contactPage .contactBottom .contactBottomLeft {
   display: flex;
-  align-items: start;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-top: 1rem;
   flex-direction: column;
+  /* align-items: start; */
   gap: 2rem;
 }
 .contactPage .contactBottom .address,
 .phone,
-.email,
-.chamber {
+.email {
   font-weight: 600;
-  color: #ecc53f;
-  font-size: 16px;
+  color: var(--secondary);
+  font-size: 1.2rem;
   letter-spacing: 1px;
   display: flex;
   align-items: start;
-  justify-content: center;
   gap: 1rem;
 }
 
 .contactPage .contactBottom .contactBottomRight {
-  width: 40%;
-  height: fit-content;
+  flex-basis: 55%;
 }
 .contactPage .contactBottom .contactBottomRight form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
   width: 100%;
 }
 .contactPage .contactBottom .contactBottomRight form input {
-  width: 80%;
+  width: 100%;
   padding: 0.5rem;
   border-radius: 0.5rem;
   outline: none;
-  border: 1px solid #ecc53f;
+  border: 1px solid var(--secondary);
   letter-spacing: 1px;
 }
-
 .contactPage .contactBottom .contactBottomRight form textarea {
-  width: 80%;
+  width: 100%;
   resize: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
   outline: none;
-  border: 1px solid #ecc53f;
+  border: 1px solid var(--secondary);
 }
-.contactPage .contactBottom .contactBottomRight form button {
-  width: 80%;
-  border: none;
-  background: #ecc53f;
-  padding: 0.6rem 0px;
-  color: black;
-  letter-spacing: 1.5px;
-  border-radius: 0.5rem;
+@media screen and (max-width: 1200px) {
+  .contactPage .contactBottom {
+    padding: 5rem 2rem;
+  }  
+  .contactPage .contactTop .overlay {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contactPage .contactBottom {
+    padding: 5rem 1rem;
+  }
+  .contactPage .contactTop .overlay {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contactPage .contactBottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .contactPage .contactBottom .contactBottomLeft {
+    display: none;
+  }
 }

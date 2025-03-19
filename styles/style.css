@@ -28,7 +28,7 @@ header {
   align-items: center;
   gap: 3rem;
 }
-.hero h2 {
+.hero .hero-text h2 {
   color: white;
   font-size: 3rem;
   max-width: 60%;
@@ -37,18 +37,20 @@ header {
   font-size: 1rem;
 }
 @media screen and (max-width: 1200px) {
-  .hero h2 {
+  .hero .hero-text h2 {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .hero h2 {
+  .hero.hero-text h2 {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 900px) {
-  .hero h2 {
-    width: 90%;
+@media screen and (max-width: 600px) {
+  .hero .hero-text h2 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    min-width: 90%;
   }
 }
 main {
@@ -70,7 +72,7 @@ main {
   flex-direction: column;
   gap: 0.6rem;
 }
-.about p {
+.about-text p {
   color: var(--secondary);
   text-align: justify;
 }
@@ -82,6 +84,13 @@ main {
 @media screen and (max-width: 1024px) {
   main {
     padding: 3rem 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-text p {
+    color: var(--secondary);
+    text-align: left;
+    letter-spacing: 1px;
   }
 }
 .service-section {
@@ -110,7 +119,6 @@ main {
 }
 .service-cards .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
   transform: scale(1.05);
 }
 .service-cards .card .card-img {
@@ -134,7 +142,15 @@ main {
   justify-content: flex-start;
   gap: 1rem;
   flex-basis: 40%;
+  max-height: 40%;
   text-align: justify;
+}
+.service-cards .card .card-text .card-heading {
+  text-align: left;
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 1rem;
+
 }
 @media screen and (max-width: 720px) {
   .service-cards {
@@ -142,5 +158,19 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .service-cards .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .service-cards .card:hover {
+    transform: none;
+  }
+  .service-cards .card .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-basis: 40%;
+    text-align: left;
   }
 }
