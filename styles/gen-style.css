@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
-  /* overflow-x: hidden; */
 }
 
 :root {
@@ -206,7 +205,6 @@ nav {
 }
 .mainHeader .logo img {
   width: 15rem;
-  /* height: 3rem; */
 }
 .navMenu {
   list-style: none;
