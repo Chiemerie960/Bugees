@@ -5,12 +5,12 @@
 }
 
 header {
-  height: 100vh;
+  height: fit-content;
 }
 
 .hero {
   background: url("../assets/testbg.jpg"),
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -26,6 +26,7 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-transform: capitalize;
   gap: 3rem;
 }
 .hero .hero-text h2 {
@@ -33,8 +34,9 @@ header {
   font-size: 3rem;
   max-width: 60%;
 }
-.hero button {
+.hero a {
   font-size: 1rem;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 1200px) {
   .hero .hero-text h2 {
@@ -54,15 +56,22 @@ header {
   }
 }
 main {
-  padding: 3rem 10rem;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 3rem;
+}
+section {
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 6rem; */
 }
 .about {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  /* background: linear-gradient(#2f2f2f, #1f1f1f);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 .about h2 {
   color: var(--primary);
@@ -77,12 +86,12 @@ main {
   text-align: justify;
 }
 @media screen and (max-width: 1200px) {
-  main {
+  section {
     padding: 3rem 2rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  main {
+  section {
     padding: 3rem 1rem;
   }
 }
@@ -94,31 +103,38 @@ main {
   }
 }
 .service-section {
-  /* padding: 3rem 10rem; */
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 5rem;
+  background: linear-gradient(#2f2f2f, #1f1f1f);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .service-section h2 {
-  color: var(--primary);
+  /* font-size: 3rem; */
+  /* font-weight: 300; */
+  color: var(--yellow);
 }
 .service-section .service-cards {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.5rem;
 }
 .service-cards .card {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 450px;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: var(--transition);
+  border-radius: 2rem;
+  background-color: #222;
+  gap: 2rem;
 }
 .service-cards .card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
 }
 .service-cards .card .card-img {
@@ -146,11 +162,13 @@ main {
   text-align: justify;
 }
 .service-cards .card .card-text .card-heading {
-  text-align: left;
+  text-align: center;
   font-weight: 600;
-  color: var(--secondary);
-  font-size: 1rem;
-
+  color: white;
+  font-size: 1.2rem;
+}
+.service-cards .card .card-text p {
+  color: white;
 }
 @media screen and (max-width: 720px) {
   .service-cards {
@@ -172,5 +190,110 @@ main {
     gap: 1rem;
     flex-basis: 40%;
     text-align: left;
+  }
+}
+/* Testimonials section */
+.testimonial-section {
+  width: 100%;
+}
+.testimonial-section h2 {
+  color: var(--primary);
+}
+.testimonial-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 30vh;
+  position: relative;
+}
+
+.testimonial-slide {
+  display: none;
+  text-align: center;
+  padding: 1rem;
+  width: 50%;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-slide.active {
+  display: flex;
+  animation: fade 0.8s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.testimonial-review {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #222;
+}
+
+.testimonial-stars {
+  font-size: 1.5rem;
+  color: #ffc107;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10rem;
+}
+.next {
+  right: 10rem;
+}
+
+.prev:hover,
+.next:hover {
+  background: var(--secondary);
+}
+
+@media screen and (max-width: 900px) {
+  .prev {
+    left: 3rem;
+  }
+  .next {
+    right: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .prev {
+    left: 0.5rem;
+  }
+  .next {
+    right: 0.5rem;
+  }
+  .testimonial-slide {
+    width: 100%;
   }
 }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="./js/index.js" defer></script>
+    <script src="./js/slider.js" defer></script>
   </head>
   <body>
     <!-- **************THE NAVBAR************** -->
@@ -38,7 +39,9 @@
         </div>
         <div class="mainHeader">
           <div class="logo">
-            <img src="assets/BUGEES.png" alt="Company logo" />
+            <a href="./index.html">
+              <img src="assets/BUGEES.png" alt="Company logo" />
+            </a>
           </div>
           <ul class="navMenu">
             <li>
@@ -62,7 +65,7 @@
       <section class="hero">
         <div class="hero-text heading" data-aos="fade-up">
           <h2>Your Reliable Source for Quality Equipment and Solutions</h2>
-          <button class="btn-yellow">Request a Quote</button>
+          <a href="./pages/contact.html" class="btn-yellow">Request a Quote</a>
         </div>
       </section>
     </header>
@@ -161,6 +164,28 @@
           </div>
         </div>
       </section>
+      <section class="testimonial-section">
+        <h2 class="heading">What Our Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slide active">
+                <p class="testimonial-review">"Excellent service! The equipment quality exceeded my expectations."</p>
+                <p class="testimonial-name">- John Doe</p>
+                <div class="testimonial-stars">★★★★★</div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-review">"Very professional and prompt delivery. Highly recommended!"</p>
+                <p class="testimonial-name">- Jane Smith</p>
+                <div class="testimonial-stars">★★★★☆</div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-review">"Great pricing and fantastic customer support."</p>
+                <p class="testimonial-name">- Michael Johnson</p>
+                <div class="testimonial-stars">★★★★★</div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
     </main>
     <footer class="footer">
       <div class="footerMenu">
@@ -172,16 +197,16 @@
           <h2>Quick Links:</h2>
           <ul class="footerLinks">
             <li>
-              <a href="#">HOME</a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="#about">ABOUT</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#service">SERVICES</a>
+              <a href="#service">Services</a>
             </li>
             <li>
-              <a href="./pages/contact.html">CONTACT</a>
+              <a href="./pages/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -190,7 +215,7 @@
           <h2>Contact :</h2>
           <div class="footerInfo">
             <i class="bi bi-telephone-fill"></i>
-            <p>+234 8039766079</p>
+            <p>+234 803 976 6079</p>
           </div>
           <div class="footerInfo">
             <i class="bi bi-envelope-fill"></i>
