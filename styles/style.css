@@ -287,11 +287,8 @@ button.next {
   }
 }
 @media screen and (max-width: 600px) {
-  .prev {
-    left: 0.5rem;
-  }
-  .next {
-    right: 0.5rem;
+  .prev, .next{
+    display: none;
   }
   .testimonial-slide {
     width: 100%;
